@@ -1,41 +1,84 @@
-<!-- Markup the content below with tags and attributes such that it can be styled in CSS-->
+<!-- Markup the content below with tags and attributes such that it can be styled in CSS
+good example https://codepen.io/vikkibee/pen/YzxEBmN?editors=1100
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <!-- Link your CSS stylesheet (that's to the left) 
 then go into the index.css file and edit-->
 <link rel="stylesheet" href="index.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+
 </head>
+
+<section class="doc">
 <body>
-        Plan your Visit
-        Learn about the Park
-        Get Involved
-   
-      <!--we're given "header_img.jpg"
-      the header image is inside the assets to the left
-      so we'd have to do <img src="reference the file name and file" alt=""-->
-      <img src="assets/header_img.jpg" alt="">
-      Yosemite Park Guide
-      Come explore California’s beautiful wilderness.
-      Always open. Reservations are not available or required to enter the park.
-      
+  <nav>  
+    <div class="nav-header">
+      <a href="#plan" class="plan">Plan your Visit</a>
+      <a href="learn" class="learn"> Learn About the Park</a>
+      <a href="involved" class="involved">Get Involved</a>
+    </div>
+  </nav>
+
+
+  <!--we're given "header_img.jpg"
+  the header image is inside the assets to the left
+  so we'd have to do <img src="reference the file name and file" alt=""-->
+  
+  <div class="yosemite">
+    <img src="assets/header_img.jpg" class="yosemite-pic" alt="Picture of Yosemite">
+     
+      <h1>Yosemite Park Guide</h1>
+        <p>
+        Come explore California’s beautiful wilderness.
+        </p>
+        <p>Always open. Reservations are not available or required to enter the park.
+       </p>
+  </div>
+
+    <main>
       Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
       
       First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.
+    </main>
+
+      <div class="fire">
+      <img src="https://image.flaticon.com/icons/svg/2979/2979348.svg">
+      <br>Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the park’s ecosystems. This blog provides updates about fires in Yosemite. Check for <span>current fire restrictions.</span>
+      </div>
+
+
+      <div class="camp">
+      <img src="https://image.flaticon.com/icons/svg/820/820374.svg">
+      <br>We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the park entrance fee upon arrival (there's no need to pay it in advance).
+      </div>
+
+      <br>
+      <img src="assets/footer_img.jpg" class="footer-img">
+      <br>
+      <br>
+      <br>
       
-      "https://image.flaticon.com/icons/svg/2979/2979348.svg"
-      Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the park’s ecosystems. This blog provides updates about fires in Yosemite. Check for current fire restrictions.
-      
-      "https://image.flaticon.com/icons/svg/820/820374.svg"
-      We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the park entrance fee upon arrival (there's no need to pay it in advance).
-    
-      "footer_img.png"
-      
-      
-        Plan your Visit
-        Learn about the Park
-        Get Involved
-      
+      <nav>  
+        <div class="nav-footer">
+          <a href="#plan" class="plan">Plan your Visit</a>
+          <a href="learn" class="learn"> Learn About the Park</a>
+          <a href="involved" class="involved">Get Involved</a>
+        </div>
+      </nav>
+       
+</section>   
 </body>
 </html>
